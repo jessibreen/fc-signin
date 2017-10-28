@@ -11,6 +11,11 @@
 |
 */
 
+if ( env('APP_ENV') != 'local' ) {
+    \URL::forceRootUrl('http://foodconnection.uky.edu/signin');
+}
+
+
 Route::get('/', function () {
     return view('welcome');
 });
