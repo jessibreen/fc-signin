@@ -20,6 +20,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//Route::get('/submit', function () {
+//    return view('submit');
+//});
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/events', 'EventController@index');
+Route::get('events/{event}', 'EventController@show');
+//Route::post('/events/{event}/attendees', 'AttendeeController@store');
+Route::get('/events/{event}/signin', 'SigninController@create');
+Route::post('/events/{event}/signin', 'SigninController@store');
+
+
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
