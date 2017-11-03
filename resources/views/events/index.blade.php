@@ -17,7 +17,7 @@
 
         <ul class="list-group">
             @foreach ($events as $event)
-                <li class="list-group-item"><a href="/events/{{$event->id}}">{{ $event->name}}</a></li>
+                <li class="list-group-item"><a href="{{url('/events/'.$event->id)}}">{{ $event->name}}</a></li>
             @endforeach
         </ul>
 

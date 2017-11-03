@@ -22,7 +22,7 @@
 
     <div class="col-md-6 col-md-offset-3">
 
-    <form> <a href="/events/{{ $event->id }}/signin" class="btn btn-default" role="button">Sign in</a></form>
+    <form> <a href="{{url('/events/'. $event->id .'/signin')}}" class="btn btn-default" role="button">Sign in</a></form>
 
     </div>
 @stop

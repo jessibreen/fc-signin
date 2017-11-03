@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <h1>Sign In</h1>
-            <form method="POST" action="/events/{{$eventId}}/signin">
+            <form method="POST" action="{{url('/events/'.$eventId.'/signin')}}">
                 {!! csrf_field() !!}
                 <div class="form-group">
                     <label for="firstname">Name</label>
