@@ -23,7 +23,7 @@ Route::get('/', function () {
 //Route::get('/submit', function () {
 //    return view('submit');
 //});
-Auth::routes();
+//Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/events', 'EventController@index');
 Route::get('events/{event}', 'EventController@show');
@@ -31,6 +31,17 @@ Route::get('events/{event}', 'EventController@show');
 Route::get('/events/{event}/signin', 'SigninController@create');
 Route::post('/events/{event}/signin', 'SigninController@store');
 
+/*Route::get('attendees/excel',
+    [
+        'as' => '??',
+        'uses' => 'AttendeesController@excel'
+    ]);*/
+
+/*Route::get('/payments/excel',
+    [
+        'as' => 'admin.invoices.excel',
+        'uses' => 'PaymentsController@excel'
+    ]);*/
 
 
 Route::group(['prefix' => 'admin'], function () {

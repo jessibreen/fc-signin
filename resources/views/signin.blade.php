@@ -21,7 +21,7 @@
                     <label><input type="radio" id="role" name="role" value="UK Staff or Faculty">UK Staff or Faculty</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" id="role" name="role" value="Cooperative Extention">Cooperative Extention Agent</label>
+                    <label><input type="radio" id="role" name="role" value="Cooperative Extention Agent">Cooperative Extention Agent</label>
                 </div>
                 <div class="radio">
                     <label><input type="radio" id="role" name="role" value="Community Member">Community Member</label>
